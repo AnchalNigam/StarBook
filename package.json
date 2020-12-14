@@ -1,0 +1,38 @@
+{
+  "name": "starbook",
+  "version": "1.0.0",
+  "description": "StarBook is website where you can explore movies, songs, videos, web-series.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnchalNigam/StarBook.git"
+  },
+  "keywords": [
+    "movies",
+    "songs",
+    "web-series",
+    "nodejs",
+    "graphql",
+    "postgres",
+    "swagger",
+    "rest-apis",
+    "mongo"
+  ],
+  "author": "Anchal Nigam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnchalNigam/StarBook/issues"
+  },
+  "homepage": "https://github.com/AnchalNigam/StarBook#readme",
+  "dependencies": {
+    "apollo-server-fastify": "^2.19.0",
+    "config": "^3.3.3",
+    "fastify": "^3.9.1",
+    "fastify-swagger": "^3.5.0",
+    "knex": "^0.21.13",
+    "pg": "^7.4.3 "
+  }
+}
