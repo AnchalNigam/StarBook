@@ -1,6 +1,8 @@
 const { gql } = require('apollo-server-fastify');
-const Movies = require('./movies');
 const root = require('./root');
+const movieCategories = require('./movie-categories');
+const scalar = require('./scalar');
+const moviesByCategory = require('./movies-by-category');
 
 const SchemaDefinition = gql`
 	schema {
@@ -11,6 +13,8 @@ const SchemaDefinition = gql`
 
 module.exports = [
   SchemaDefinition,
-  Movies,
-  root
+	root,
+	movieCategories,
+	scalar,
+	moviesByCategory
 ];

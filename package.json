@@ -30,6 +30,7 @@
   "dependencies": {
     "apollo-server-fastify": "^2.19.0",
     "config": "^3.3.3",
+    "date-fns": "^2.16.1",
     "fastify": "^3.9.1",
     "fastify-swagger": "^3.5.0",
     "knex": "^0.21.13",

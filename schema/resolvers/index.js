@@ -1,5 +1,9 @@
-const MoviesResolver = require('./movies');
+const movies = require('./movies');
+const date = require('./date');
+const episodes = require('./episodes');
 
 module.exports = [
-  MoviesResolver,
+  movies,
+  date,
+  // episodes
 ];

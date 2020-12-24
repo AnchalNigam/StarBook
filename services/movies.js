@@ -1,18 +1,34 @@
-const Movies = require('./../models/movies');
+const movies = require('./../models/movies');
 
-async function getMovies() {
-  return Movies.getMovies()
+async function getMovieCategories() {
+  return movies.getMoviesCategories()
   .then((result) => {
     if(result && result.rows.length > 0) {
-      return "Hello " + result.rows[0].first_name + "!";
+      return result.rows;
     } else {
-      return "Hello Movies!"
+      return [];
     }
   }).catch(() => {
-    return "Hello Movies!";
-  })
+    return [];
+  });
+}
+
+async function getMovieByCategory(categoryId) {
+  return movies.getMoviesByCategory(categoryId)
+  .then((result) => {
+    // console.log(result.rows, 'result')
+    if(result && result.rows.length > 0) {
+      return result.rows;
+    } else {
+      return [];
+    }
+  }).catch((err) => {
+    console.log(err)
+    return [];
+  });
 }
 
 module.exports = {
-  getMovies
+  getMovieCategories,
+  getMovieByCategory
 }
